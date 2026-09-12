@@ -30,3 +30,18 @@ La estructura de **Cola** funciona bajo el principio **FIFO** (*First In, First 
 1. Clonar el repositorio:
    ```bash
    git clone [https://github.com/jhoymarstivencastillo2007-cyber/sistema-turnos.git](https://github.com/jhoymarstivencastillo2007-cyber/sistema-turnos.git)
+
+ ## 8. Casos de prueba utilizados
+* **Flujo Normal:** Se ingresan 3 estudiantes (ej. Juan, María, Carlos). Al seleccionar "Atender", el sistema extrae a Juan por haber sido el primero en llegar.
+* **Caso Límite 1 (Cola Vacía):** Al intentar atender sin estudiantes, el sistema muestra: `"La cola está vacía. No hay estudiantes para atender."`
+* **Caso Límite 2 (Capacidad Máxima):** Se registran 5 estudiantes. Al intentar ingresar un 6.º estudiante, el sistema rechaza el registro con: `"La cola está llena. No se puede agregar otro estudiante."`
+
+## 9. Limitaciones y posibles mejoras
+* **Limitaciones:**
+  * Almacenamiento volátil en memoria RAM (los datos se borran al cerrar).
+  * Capacidad fija estática limitada a 5 registros.
+  * La operación `pop(0)` en listas estándar de Python requiere reindexar elementos $O(n)$.
+* **Posibles Mejoras:**
+  * Implementar la librería `collections.deque` para optimizar operaciones al frente a $O(1)$.
+  * Integrar almacenamiento en Base de Datos o archivos JSON.
+  * Desarrollar una interfaz gráfica de usuario (GUI).
