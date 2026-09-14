@@ -45,3 +45,6 @@ La estructura de **Cola** funciona bajo el principio **FIFO** (*First In, First 
   * Implementar la librería `collections.deque` para optimizar operaciones al frente a $O(1)$.
   * Integrar almacenamiento en Base de Datos o archivos JSON.
   * Desarrollar una interfaz gráfica de usuario (GUI).
+
+## 10. Enlace del video
+https://youtu.be/b5DTdblx51U
